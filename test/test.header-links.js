@@ -10,7 +10,7 @@ casper.thenBypassUnless(function() {
 
 casper.thenOpen('http://localhost:3000', function(result) {
   casper.test.assert(result.status === 200, 'Front page opens');
-  casper.test.assertSelectorHasText('a.wordmark', 'IBMWatson Developer Cloud');
+  casper.test.assertSelectorHasText('a.wordmark', 'IKEA HomePage');
   testHeaderLinks();
 });
 
