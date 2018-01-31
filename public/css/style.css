@@ -1128,7 +1128,9 @@ pre[class*=" language-"] {
 
 .tab-views {
   background-color: transparent;
+  background-image: url('/images/ikea-win-at-sleeping__1364485996078-s42.jpg');
   border: none;
+  height: 100%;
   margin-top: 0rem;
   margin-bottom: 1.25rem;
   padding: 0rem; }
