@@ -320,7 +320,7 @@ class ClassifyScoreTable extends React.Component {
               
               if(item.type_hierarchy!=null && item.score>.9){
                 alert(item.class);
-                var searchURL='https://www2.ctef2.ikeadt.com/gb/en/search/?k='+item.class;
+                var searchURL='http://www.ikea.com/gb/en/search/?k='+item.class;
                 window.open(searchURL); 
                }
       
