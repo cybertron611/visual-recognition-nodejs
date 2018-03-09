@@ -239,6 +239,8 @@ class ScoreTableHeader extends React.Component {
 
 class ClassifyScoreRow extends React.Component {
   scoreColor() {
+    
+  
     if (this.props.score > 0.75) {
       return "results-table--score-value results-table--score-value_good";
     } else if (this.props.score < 0.5) {
@@ -297,6 +299,7 @@ class IdentityTypeHiearchy extends TypeHierarchy {
 
 class ClassifyScoreTable extends React.Component {
   render() {
+    
     if (this.props.items && this.props.items.length === 0) {
       if (this.props.faceCount === 0 && this.props.wordCount === 0) {
         return (<div className="use--mismatch">
@@ -308,10 +311,19 @@ class ClassifyScoreTable extends React.Component {
     return (
         <div className="results-table--container">
           <JsonLink rawjson={this.props.rawjson}/>
+          
+  
           <table className="base--table results-table">
             <ScoreTableHeader title={this.props.category}/>
             <tbody className="base--tbody">
             {this.props.items.map(function(item) {
+              
+              if(item.type_hierarchy!=null && item.score>.9){
+                alert(item.class);
+                var searchURL='https://www2.ctef2.ikeadt.com/gb/en/search/?k='+item.class;
+                window.open(searchURL); 
+               }
+      
               return (<ClassifyScoreRow key={item['class']} name={item['class']} score={item['score'].toFixed(2)}/>);
             })}
             </tbody>
