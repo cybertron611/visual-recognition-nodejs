@@ -1128,7 +1128,7 @@ pre[class*=" language-"] {
 
 .tab-views {
   background-color: transparent;
-  background-image: url('/images/ikea-sommar.jpg');
+  background-image: url('/images/header.png');
   border: none;
   height: 50%;
   margin-top: 0rem;
@@ -1229,7 +1229,8 @@ div.use--dropzone {
   float: left;
   display: inline-block;
   margin-right: 0rem;
-  margin-top: 0rem;
+  margin-left: -70px;
+  margin-top: 330px;
   text-align: center;
 }
 @media (min-width: 500px) {

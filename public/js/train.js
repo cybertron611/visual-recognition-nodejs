@@ -467,10 +467,10 @@ $(document).ready(function() {
             $('.test--section').show();
             if (params.bundle.kind === 'user') {
               $('a.base--a.test--random-test-image').hide();
-              $('input[type=text].test--url-input.base--input').attr('placeholder', 'Paste an image URL');
+             
             } else {
               $('a.base--a.test--random-test-image').show();
-              $('input[type=text].test--url-input.base--input').attr('placeholder', 'Or paste an image URL');
+             
             }
             $('.test--classifier').text($('input.base--input._examples--input-name').val());
             showTestPanel(classifier);
