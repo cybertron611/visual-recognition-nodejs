@@ -33,7 +33,7 @@ var TWENTY_SECONDS = 20000;
 // Bootstrap application settings
 require('./config/express')(app);
 
-console.log('hello');
+console.log('Aditya');
 
 // Create the service wrapper
 // If no API Key is provided here, the watson-developer-cloud@2.x.x library will check for an VISUAL_RECOGNITION_API_KEY
